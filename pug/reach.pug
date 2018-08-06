@@ -1,0 +1,27 @@
+mixin reaches(h5, p, cl)
+    .reach
+        .reach_title_container
+            .reach_img(class= cl)
+            h5.teach_title= h5
+        p.reach_desc= p
+section#reach
+    .container
+        h3.subtitle Что Вы увезете с собой 
+        h4.after_subtitle как результат Вашей работы на интенсиве?
+        .all_reaches
+            .left_reach_col
+                +reaches('Новый взгляд','на себя как на достойную личность - это не просто понимание, это новое ощущение себя', 'reach_img_first')
+                +reaches('Четкие цели','и видение картины жизни Вашей мечты, по Вашим правилам и законам', 'reach_img_second')
+                +reaches('Открытие','денежного и любовного потока изобилия', 'reach_img_third')
+                +reaches('Пошаговые инструкции','к обретению внутреннего спокойствия и осознанности', 'reach_img_fourth')
+            .right_reach_col
+                +reaches('Вдохновение,','эмоциональный подъём и праздник в душе!', 'reach_img_fifth')
+                +reaches('Новые знакомства,','полезные связи, запуск совместных проектов и близкие люди', 'reach_img_sixth')
+                +reaches('Отдых','сердцем с достойным окружением', 'reach_img_seventh')
+                +reaches('Персональные консультации','с тренерами и ответы на Ваши вопросы', 'reach_img_eighth')
+        .row
+            .col-md-3.col-sm-3.offset-3
+                +reaches('Конкретные инструменты','и технологии по реализации Ваших намерений', 'reach_img_nineth')
+            .col-md-3.col-sm-3.offset-3
+                +reaches('Углубленная проработка','процессов, блокирующих Ваше изобилие', 'reach_img_tenth')
+        a(href="#prices").button.button_reach Участвовать

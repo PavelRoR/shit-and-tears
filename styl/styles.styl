@@ -1,42 +1,142 @@
+@font-face {
+	font-family: 'RosaMarena';
+	src: url('../fonts/RosaMarena.eot');
+	src: url('../fonts/RosaMarena.eot') format('embedded-opentype'),
+		 url('../fonts/RosaMarena.woff2') format('woff2'),
+		 url('../fonts/RosaMarena.woff') format('woff'),
+		 url('../fonts/RosaMarena.ttf') format('truetype'),
+		 url('../fonts/RosaMarena.svg#RosaMarena') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyrRoman';
+	src: url('../fonts/HelveticaNeueCyrRoman.eot');
+	src: url('../fonts/HelveticaNeueCyrRoman.eot') format('embedded-opentype'),
+		 url('../fonts/HelveticaNeueCyrRoman.woff2') format('woff2'),
+		 url('../fonts/HelveticaNeueCyrRoman.woff') format('woff'),
+		 url('../fonts/HelveticaNeueCyrRoman.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueCyrRoman.svg#HelveticaNeueCyrRoman') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyrLight';
+	src: url('../fonts/HelveticaNeueCyrLight.eot');
+	src: url('../fonts/HelveticaNeueCyrLight.eot') format('embedded-opentype'),
+		 url('../fonts/HelveticaNeueCyrLight.woff2') format('woff2'),
+		 url('../fonts/HelveticaNeueCyrLight.woff') format('woff'),
+		 url('../fonts/HelveticaNeueCyrLight.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyrItalic';
+	src: url('../fonts/HelveticaNeueCyrItalic.eot');
+	src: url('../fonts/HelveticaNeueCyrItalic.eot') format('embedded-opentype'),
+		 url('../fonts/HelveticaNeueCyrItalic.woff2') format('woff2'),
+		 url('../fonts/HelveticaNeueCyrItalic.woff') format('woff'),
+		 url('../fonts/HelveticaNeueCyrItalic.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueCyrItalic.svg#HelveticaNeueCyrItalic') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyrBoldItalic';
+	src: url('../fonts/HelveticaNeueCyrBoldItalic.eot');
+	src: url('../fonts/HelveticaNeueCyrBoldItalic.eot') format('embedded-opentype'),
+		 url('../fonts/HelveticaNeueCyrBoldItalic.woff2') format('woff2'),
+		 url('../fonts/HelveticaNeueCyrBoldItalic.woff') format('woff'),
+		 url('../fonts/HelveticaNeueCyrBoldItalic.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueCyrBoldItalic.svg#HelveticaNeueCyrBoldItalic') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyrBold';
+	src: url('../fonts/HelveticaNeueCyrBold.eot');
+	src: url('../fonts/HelveticaNeueCyrBold.eot') format('embedded-opentype'),
+		 url('../fonts/HelveticaNeueCyrBold.woff2') format('woff2'),
+		 url('../fonts/HelveticaNeueCyrBold.woff') format('woff'),
+		 url('../fonts/HelveticaNeueCyrBold.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyrBlack';
+	src: url('../fonts/HelveticaNeueCyrBlack.eot');
+	src: url('../fonts/HelveticaNeueCyrBlack.eot') format('embedded-opentype'),
+		 url('../fonts/HelveticaNeueCyrBlack.woff2') format('woff2'),
+		 url('../fonts/HelveticaNeueCyrBlack.woff') format('woff'),
+		 url('../fonts/HelveticaNeueCyrBlack.ttf') format('truetype'),
+		 url('../fonts/HelveticaNeueCyrBlack.svg#HelveticaNeueCyrBlack') format('svg');
+}
+
 *
 	margin 0
 	padding 0
 	outline none
-
 a
 	color: #fefefe
 	&:focus
 		outline: 0
+	&:hover
+		text-decoration: none
 button
 	border none
-.video_wrapper
-	margin 0 auto
-	position relative
-	&:before
-		content ''
-		height 0
-		padding-top 56.25%
-		display block
-	&:after
-		content: ''
-		display block
-		position: absolute
-		top: 0
-		left 0
-		right 0
-		width: 100%
-		height 70px
-	img,
-	iframe
-		position absolute
-		width 100%
-		height 100%
-		display block
-		background-color #fff
-		border-radius 3px
-		border: 0
-		top 0
-		left 0
-		right 0
-		bottom 0
-		cursor pointer
+// .video_wrapper
+// 	margin 0 auto
+// 	position relative
+// 	&:before
+// 		content ''
+// 		height 0
+// 		padding-top 56.25%
+// 		display block
+// 	&:after
+// 		content: ''
+// 		display block
+// 		position: absolute
+// 		top: 0
+// 		left 0
+// 		right 0
+// 		width: 100%
+// 		height 70px
+// 	img,
+// 	iframe
+// 		position absolute
+// 		width 100%
+// 		height 100%
+// 		display block
+// 		background-color #fff
+// 		border-radius 3px
+// 		border: 0
+// 		top 0
+// 		left 0
+// 		right 0
+// 		bottom 0
+// 		cursor pointer
+.button
+	display block
+	border: 1px solid rgb(207, 171, 25);
+	border-radius: 30px
+	background-image: linear-gradient( 180deg, #fce35b 0%, #e3b80c 100%);
+	box-shadow: 0px 0px 7px 0px rgba(#fff, .41) inset, 0px 4px 0px 0px rgba(211, 174, 4, 1) 
+	width: 288px;
+	height: 58px;
+	line-height: 56px;
+	font-size: 18px;
+	font-family: "HelveticaNeueCyrBold";
+	color: rgb(28, 31, 36);
+	text-align: center;
+	margin 30px auto 0
+	transition: all .3s ease
+	&:focus
+		text-decoration: none
+		color: rgb(28, 31, 36);
+	&:hover
+		text-decoration: none
+		color: rgb(28, 31, 36);
+		background-image: linear-gradient( 0deg, #fce35b 0%, #e3b80c 100%);
+		box-shadow: 0px 0px 7px 0px rgba(#fff, .41) inset
+		transform: translateY(4px)
+
+
+
+@import 'parts/main'
+@import 'parts/reach'
+@import 'parts/plan'
+@import 'parts/why'
+@import 'parts/coaches'
+@import 'parts/rews'
+@import 'parts/footer'
+@import 'medias'

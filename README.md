@@ -1,2 +1,1 @@
-# astro
 # shit-and-tears

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 html(lang="ru")
+
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(name="author" content="Master Vision")
-		meta(name="description" content=" «»")
+		meta(name="description" content="Активационный интенсив «Гав*о и слезы»")
 		meta(property="og:image" content="")
-		title «»
+		title Активационный интенсив «Гав*о и слезы»
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
@@ -20,9 +21,15 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
+		include pug/main
+		include pug/reach
+		include pug/plan
+		include pug/why
+		include pug/coaches
+		include pug/rews
+		include pug/footer
 		include pug/scripts
 		<!--BEGIN JIVOSITE CODE-->
 		//script
 			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
 		<!--END JIVOSITE CODE-->
-		iframe(name="results" style="display:none;")

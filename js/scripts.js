@@ -70,48 +70,22 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            400: {
+            300: {
                 items: 2
             },
-            600: {
+            510: {
+                items: 3
+            },
+            670: {
                 items: 4
             },
-            1000: {
+            991: {
+                items: 5
+            },
+            1200: {
                 items: 6
             }
         }
-    });
-    /*Видео-отзывы Жанны*/
-    $('#jannas_videos, #alexs_videos').owlCarousel({
-        loop: false,
-        margin: 20,
-        nav: true,
-        navText: ["&larr;", "&rarr;"],
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            1000: {
-                items: 2
-            }
-        }
-    });
-    /*Текстовые отзывы Жанны*/
-    $('#jannas_texts, #alexs_texts').owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        navText: ["&larr;", "&rarr;"],
-        dots: false,
-        items: 1,
-        autoHeight: true
-    });
-
-    /*Видео в отзывах*/
-    $(".video_wrapper img").click( function () {
-        var a = $(this).parent().attr("data-youtube");
-        $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1" allowfullscreen></iframe>')
     });
 
         /*Страые браузеры*/

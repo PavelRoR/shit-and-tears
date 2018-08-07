@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     /* Якорь */
     $(function () {
         $("a[href='#prices']").click(function (h) {
@@ -11,26 +11,38 @@ $(document).ready(function() {
         });
     });
     /*План*/
-$(function () {
-    $('.day').click('.day_toggle_trigger', function(){
-        if ($('.day_toggle_trigger',this).text() == 'Смотреть программу')
-        {
-            $('.day_body', this).slideDown(600);
-        $('.day_toggle_trigger',this).text('Свернуть');
-    }
-        else{
-            $('.day_body', this).slideUp(600);
-            $('.day_toggle_trigger',this).text('Смотреть программу');
+    $(function () {
+        $('.day').click('.day_toggle_trigger', function () {
+            if ($('.day_toggle_trigger', this).text() == 'Смотреть программу') {
+                $('.day_body', this).slideDown(600);
+                $('.day_toggle_trigger', this).text('Свернуть');
+            } else {
+                $('.day_body', this).slideUp(600);
+                $('.day_toggle_trigger', this).text('Смотреть программу');
+            }
+        });
+    });
+    // owl-carousel
+    $('#certificats').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        navText: ["&larr;", "&rarr;"],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            400: {
+                items: 2
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 6
+            }
         }
-    }
-    ,
-// function(){
-//         $('.day_body', this).slideUp(600);
-//         $('.day_toggle_trigger').text('Смотреть программу');
-//     }
-
-);
-});
-
-/*Конец документа*/
+    });
+    /*Конец документа*/
 });

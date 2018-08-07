@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'RosaMarena';
-    src: url('fonts/RosaMarena.eot');
-    src: url('fonts/RosaMarena.eot') format('embedded-opentype'),
-         url('fonts/RosaMarena.woff2') format('woff2'),
-         url('fonts/RosaMarena.woff') format('woff'),
-         url('fonts/RosaMarena.ttf') format('truetype'),
-         url('fonts/RosaMarena.svg#RosaMarena') format('svg');
-}

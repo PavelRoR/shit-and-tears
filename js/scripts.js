@@ -39,7 +39,7 @@ $(document).ready(function () {
     if (diff < 0) {
         diff = 0;
         $('.clock-stop').addClass("alert-danger");
-        $('.clock-stop').html("Скидка уменьшилась!");
+        $('.clock-stop').html("Скидка сгорела!");
         $('.price_today, .price_sale').remove();
         $('#link').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1973&clean=true&lg=ru'); 
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
         callbacks: {
             stop: function () {
                 $('.clock-stop').addClass("alert-danger");
-                $('.clock-stop').html("Скидка уменьшилась!");
+                $('.clock-stop').html("Скидка сгорела!");
                 //  $('#sale').text('1 000р.');
                 //  $('#today').text('9 900р.');
                 //  $('#link').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=1921&clean=true&lg=ru');
